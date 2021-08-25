@@ -15,7 +15,7 @@ func main() {
 func HelloServer(w http.ResponseWriter, r *http.Request) {
 	name, err := os.Hostname()
 	if err != nil {
-		name="获取主机名失败"
+		name = "get hostname failed"
 	}
 	fmt.Fprintf(w, "Hello, %s!", name)
 }
