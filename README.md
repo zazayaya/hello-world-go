@@ -22,7 +22,7 @@ docker build -t zazayaya/hello-world-go:1.0.0 .
 ```shell
 docker run --name go-hello-world -d -p 0.0.0.0:8080:8080 zazayaya/go-hello-world
 docker ps | grep go-hello-world
-curl http://IP:8080/
+curl http://localhost:8080
 ```
 
 ## Quick reference

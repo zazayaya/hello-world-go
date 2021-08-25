@@ -17,5 +17,5 @@ func HelloServer(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		name = "get hostname failed"
 	}
-	fmt.Fprintf(w, "Hello, %s!", name)
+	fmt.Fprintf(w, "Hello, %s!\n", name)
 }
