@@ -1,9 +1,9 @@
 # hello-world-go
-This project is a 'Hello, World!' in Golang Web Applications to build a docker image we can test behind an API Gateway 
+This project is a 'Hello, World!' in Golang Web Applications to build a docker image we can test behind an API Gateway
 
 ## Build hello-world
 ```shell
-SET GOOS=linux  
+SET GOOS=linux
 go build -o build/package/hello-world src/hello-world.go
 chmod +x hello-world
 ```
