@@ -20,8 +20,8 @@ docker build -t zazayaya/hello-world-go:1.0.0 .
 
 ## Test
 ```shell
-docker run --name go-hello-world -d -p 0.0.0.0:8080:8080 zazayaya/go-hello-world
-docker ps | grep go-hello-world
+docker run --name hello-world-go -d -p 0.0.0.0:8080:8080 zazayaya/hello-world-go
+docker ps | grep hello-world-go
 curl http://localhost:8080
 ```
 
