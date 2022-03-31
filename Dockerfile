@@ -6,6 +6,6 @@ ENV HTTP_VERSION   1.0.0
 
 COPY build/package/hello-world /root/
 
-expose 8080
+EXPOSE 8080
 
 CMD ["/root/hello-world"]
