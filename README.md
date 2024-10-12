@@ -1,5 +1,5 @@
 # hello-world-go
-This project is a 'Hello, World!' in Golang Web Applications to build a docker image we can test behind an API Gateway
+This project is a Golang web application that returns 'Hello, ${hostname}!' and builds a Docker image for testing behind an API Gateway.
 
 ## Supported tags and respective Dockerfile links
 - [`latest` `1.0.1` `1.0.1-alpine`](https://github.com/zazayaya/hello-world-go)
