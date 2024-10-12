@@ -23,7 +23,6 @@ jobs:
       - name: Build Hello World
         run: |
           go build -o hello-world src/hello-world.go
-          chmod +x hello-world
       - name: Build Docker image
         run: |
           docker build -t zazayaya/hello-world-go:${{ env.short_sha }} .
