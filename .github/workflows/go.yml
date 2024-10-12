@@ -22,7 +22,7 @@ jobs:
           echo "Short SHA: $short_sha"
       - name: Build Hello World
         run: |
-          go build -o hello-world src/hello-world.go
+          CGO_ENABLED=0 go build -o hello-world src/hello-world.go
       - name: Build Docker image
         run: |
           docker build -t zazayaya/hello-world-go:${{ env.short_sha }} .
