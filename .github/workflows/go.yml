@@ -3,7 +3,8 @@ name: Build Go Hello World
 on:
   push:
     branches:
-      - master
+      - master  # 当推送到 master 分支时触发
+  workflow_dispatch:  # 允许手动触发工作流
 
 jobs:
   build:
