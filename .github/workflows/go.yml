@@ -34,5 +34,5 @@ jobs:
           password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
       - name: Push Docker image to Docker Hub
         run: |
-          docker push zazayaya/hello-world-go:latest
           docker push zazayaya/hello-world-go:${{ env.short_sha }}
+          docker push zazayaya/hello-world-go:latest
