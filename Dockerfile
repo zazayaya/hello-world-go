@@ -1,4 +1,4 @@
-FROM alpine
+FROM scratch
 
 LABEL maintainer="zaza <260458726@qq.com>"
 
